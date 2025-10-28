@@ -9,9 +9,9 @@ public class ReverseAString{
 
     //Approach 1
 
-        StringBuilder rev = new StringBuilder(str).reverse();
+        /*StringBuilder rev = new StringBuilder(str).reverse();
         System.out.println("Reverse str: "+rev);
-        
+        */
 
     // Approach 2
         /*String rev ="";
@@ -20,6 +20,12 @@ public class ReverseAString{
         //System.out.println(rev);
         
         }*/
+
+    //Approach 3
+       String rev ="";
+       for(int i =0; i<=str.length()-1;i++){
+        rev = str.charAt(i)+rev;
+       }
 
         return rev.toString();
     }
