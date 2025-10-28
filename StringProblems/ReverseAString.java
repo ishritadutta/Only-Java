@@ -1,4 +1,7 @@
 
+import java.util.Scanner;
+
+
 
 public class ReverseAString{
 
@@ -23,7 +26,9 @@ public class ReverseAString{
 
     public static void main(String[] args) {
 
-        String str = "Ishrita";
+         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a string: ");
+        String str = sc.nextLine();
 
         System.out.println(Reverse(str));
         
